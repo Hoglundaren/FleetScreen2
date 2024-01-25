@@ -4,7 +4,7 @@
   "description": "- [Node.js](https://nodejs.org/en/)\r - [Visual Studio Code](https://code.visualstudio.com/)\r - [Microsoft 365 Developer Tenant](https://developer.microsoft.com/en-us/microsoft-365/dev-program)",
   "main": "main.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node index.js",
     "start-local": "npx http-server -c-1 -a localhost -o",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
