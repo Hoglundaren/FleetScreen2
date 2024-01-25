@@ -61,6 +61,12 @@ body {
     height: 900px;
 }
 
+.toothless-gif
+{
+    position: absolute;
+    top:  480px;
+    left: -10px;
+}
 .name-day-div, .theme-day-div {
     height: 100px;
     width: auto;

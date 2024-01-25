@@ -1,0 +1,22 @@
+{
+  "name": "fleetscreen",
+  "version": "1.0.0",
+  "description": "- [Node.js](https://nodejs.org/en/)\r - [Visual Studio Code](https://code.visualstudio.com/)\r - [Microsoft 365 Developer Tenant](https://developer.microsoft.com/en-us/microsoft-365/dev-program)",
+  "main": "main.js",
+  "scripts": {
+    
+    "start-local": "npx http-server -c-1 -a localhost -o"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hoglundaren/FleetScreen2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1489.0",
+    "axios": "^1.6.0",
+    "fs": "^0.0.1-security"
+  }
+}
