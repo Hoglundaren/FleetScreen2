@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>FleetScreen</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="icon" href="data:;base64,="> <!-- Suppress favicon error -->
+</head>
+
+<body>
+  <main id="main-container" role="main" class="container">
+    <a id="signin" onclick="displayUI(); return false;" href="#">
+      <img src="./images/ms-symbollockup_signin_light.png" alt="Sign in with Microsoft" />
+    </a>
+    <div id="client-id-div">
+      <input type="password" id="inputField" placeholder="Enter text">
+      <button id="submitButton">Submit</button>
+    </div>
+  </main>
+
+
+  <div class="screen-content">
+    <div class="name-day-div" id="name-day-div">
+      <h1>Name-day:</h1>
+      <h2></h2>
+    </div>
+    <div class="theme-day-div" id="theme-day-div">
+      <h1>Todays theme:</h1>
+      <h2></h2>
+    </div>
+    <div class="progress-bar" id="progress-bar">
+        <div class="progress-bar progress-bar-filling" id="progress-bar-filling">
+            <div class="progress-bar-img" id="progress-bar-img"><img src="images/sun.png" alt=""></div>
+        </div>
+    </div>
+    <div class="images-container">
+        <div class="executive">
+            <div class="executive-image-background">
+                <img src="images/andreasanimated.gif" alt="">
+            </div>
+            <div class="executive_info">
+                <h2>Andreas Höglund</h2>
+                <h3><i>Frontline Developer</i></h3>
+                <div class="status-div" id="andreas-status">
+                    <h2><i>Available</i></h2>
+                </div>
+            </div>
+        </div>
+        <div class="executive">
+            <div class="executive-image-background">
+                <img src="images/adamanimated2.gif" alt="">
+            </div>
+            <div class="executive_info">
+                <h2>Adam Andersson</h2>
+                <h3><i>Backseat Developer</i></h3>
+
+                <div class="status-div" id="adam-status">
+                    <h2><i>Available</i></h2>
+                </div>
+            </div>
+        </div>
+        <div class="executive">
+            <div class="executive-image-background">
+                <img src="images/philipanimated2.gif" alt="">
+            </div>
+            <div class="executive_info">
+                <h2>Philip Wingfelt</h2>
+                <h3><i>Offmeta Developer</i></h3>
+                <div class="status-div" id="philip-status">
+                    <h2><i>Available</i></h2>
+                </div>
+            </div>
+        </div>
+      </div>
+    <div class="room-status-div" id="room-status-div">
+      <h1></h1>
+    </div>
+</div>
+  <script src="https://alcdn.msauth.net/browser/2.1.0/js/msal-browser.min.js"
+    integrity="sha384-EmYPwkfj+VVmL1brMS1h6jUztl4QMS8Qq8xlZNgIT/luzg7MAzDVrRa2JxbNmk/e"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@microsoft/microsoft-graph-client/lib/graph-js-sdk.js"></script>
+  <script src="main.js"></script>
+  <script src="theme_days.js"></script>
+  <script src="download_calendars.js"></script>
+  <script src="update-calendars.js"></script>
+  <script src="name_days.js"></script>
+  <script src="auth.js"></script>
+  <script src="graph.js"></script>
+  <script src="ui.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+</body>
+</html>

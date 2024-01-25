@@ -1,0 +1,312 @@
+body {
+    /*height: 100%;
+    margin: 0 auto !important;
+    float: none !important;
+    background-color: #333333;*/
+    background-image: url('images/alley.png'); 
+    background-size: cover;
+
+}
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scaleAnimation {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.25);
+    }
+  }
+
+  @keyframes shrinkAndGrowAnimation {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .shrink-and-grow {
+    animation: shrinkAndGrowAnimation 2s alternate;
+  }
+
+#animatedH2 {
+    font-size: 24px;
+    transition: font-size 1s; /* 1s is the duration of the transition */
+}
+
+.container {
+    position: absolute; 
+    top:0; 
+    left: 0;
+}
+
+.screen-content {
+    height: 900px;
+}
+
+.name-day-div, .theme-day-div {
+    height: 100px;
+    width: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+  }
+
+.name-day-div h1, .theme-day-div h1 {
+    font-size: 3em;
+    font-family: 'Handlee', cursive;
+}
+.name-day-div h2, .theme-day-div h2 {
+    margin-top: 10px;
+    font-size: 2em;
+    font-family: 'Handlee', cursive;
+}
+
+.room-status-div {
+    width: 1000px;
+    margin: 55px auto 0;
+    text-align: center;
+    color: rgb(228, 200, 40);
+    transition: transform 0.3s ease-out;
+    animation: scaleAnimation 1.3s infinite alternate;
+}
+
+
+.room-status-div h1 {
+    font-size: 32px;
+    font-family: 'Handlee', cursive;
+    text-shadow: -1px -1px 0 black,  1px -1px 0 black,
+                -1px 1px 0 black, 1px 1px 0 black;;
+    
+}
+
+.progress-bar {
+    width: 1100px;
+    height: 40px;
+    background-color: #9472cf;
+    margin: 0 auto;
+    margin-top: 35px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
+.progress-bar-filling {
+    width: 100px;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: rgb(228, 200, 40);
+}
+
+.progress-bar-img {
+  position: absolute;
+  top: -30px;
+  left: -45px;
+  width: 100px;
+  height: 100px;
+}
+
+.progress-bar-img img {
+  width: 100px;
+  height: 100px;
+  animation: spin 8s linear infinite;
+}
+
+.images-container {
+    display: flex;
+    width: 950px;
+    margin: 0 auto;
+    margin-top: 60px;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.executive h2 {
+    font-size: 1.8em;
+    font-weight: 300;
+    color: white;
+}
+
+.executive h3 {
+    font-weight: 400;
+    font-size: 1.3em;
+}
+
+.executive h2 + h3 {
+    margin-top: 5px;
+}
+
+.executive h2, h3 {
+    text-align: center;
+}
+
+.executive {
+    margin: 0 30px;
+    width: 300px;
+    height: 520px;
+    background-color: #333333;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-size: cover; /* Scale the image to cover the entire div */
+    background-repeat: no-repeat;
+    position: relative;
+    color: white;
+
+    -webkit-box-shadow: 0px 10px 20px 6px #0f0f0f;
+    -moz-box-shadow: 0px 10px 20px 6px #0f0f0f;
+    box-shadow: 0px 10px 20px 6px #0f0f0f;
+}
+
+.executive img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    padding: 45px;
+}
+
+.executive-image-background {
+  width: 100%;
+  height: 280px;
+  background-color: #fe0056;
+  border-radius: 5px 5px 0 0
+}
+
+.hat {
+  width: 105px;
+  height: 105px;
+  position: absolute;
+  border-radius: 0;
+  left: 78px;
+  top: -15px;
+}
+
+.hat img {
+  width: 100%;
+  height: 100%;
+}
+
+.executive_info {
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.status-div {
+    width: 180px;
+    height: 55px;
+    background-color: #72d68c;
+    margin: 0 auto;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+.status-div h2 {
+  font-size: 1.5em;
+   line-height: 60px;
+}
+
+@media only screen and (max-width: 1300px) {
+    .container {
+        visibility: hidden;
+    }
+    .images-container {
+        width: 900px;
+        margin-top: 40px;
+    } 
+    .executive h2 {
+        font-size: 1.3em;
+    }
+    .executive h2 + h3 {
+        margin-top: 15px;
+    }
+
+    .executive h3 {
+        font-size: 0.95em;
+    } 
+    .executive {
+        width: 200px;
+        height: 360px;
+    } 
+    .executive img {
+        width: 190px;
+        height: 190px;
+        padding: 20px;
+    } 
+    .executive-image-background {
+      height: 190px;
+    }
+
+    .status-div {
+        width: 120px;
+        height: 40px;
+        margin-top: 25px;
+    }
+    .status-div h2 {
+      font-size: 1.35em;
+       line-height: 40px;
+    }
+    .name-day-div {
+        margin-top: 30px;
+    }
+    .name-day-div h1 {
+        font-size: 2.2em;
+    }
+    .theme-day-div {
+        margin-top: 30px;
+    }
+    
+    .theme-day-div h1 {
+        font-size: 2.2em;
+    }
+    .room-status-div {
+        width: 800px;
+        margin-top: 32px;
+    }
+    
+    .room-status-div h1 {
+        font-size: 1.6em;
+    }
+    .progress-bar {
+        width: 725px;
+        height: 36px;
+        margin-top: 25px;
+    }
+    .progress-bar-img {
+        top: -25px;
+        left: -45px;
+        width: 80px;
+        height: 80px;
+      }
+      
+      .progress-bar-img img {
+        width: 80px;
+        height: 80px;
+      }
+}
