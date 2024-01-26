@@ -14,6 +14,7 @@ const dateTextMap = new Map([
     ["23, 1", "Elens dag"],
     ["24, 1", "Frufri-dagen"],
     ["25, 1", "Halvsnödagen"],
+    ["26, 1", "Hardstuck Silver day"],
     ["27, 1", "Förintelsens minnesdag"],
     ["28, 1", "European Privacy & Data Protection-dagen"],
     ["29, 1", "Veganpizza-dagen"],
