@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     
-    "start-local": "npx http-server -c-1 -a localhost -o"
+    "start-local": "npx http-server -c-1 -a localhost -o",
+    "start-server": "npx http-server -c-1 -a 0.0.0.0 -o"
 
   },
   "repository": {
