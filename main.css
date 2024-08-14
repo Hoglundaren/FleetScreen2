@@ -3,7 +3,7 @@ body {
     margin: 0 auto !important;
     float: none !important;
     background-color: #333333;*/
-    background-image: url('images/sommarälv.jpg'); 
+    background-image: url('images/cloud.jpg'); 
     background-size: cover;
 
 }
@@ -67,8 +67,10 @@ body {
     width: auto;
     margin: 0 auto;
     margin-top: 50px;
-    color: white;
+    color: rgb(228, 200, 40);
     text-align: center;
+    text-shadow: -1px -1px 0 black,  1px -1px 0 black,
+                -1px 1px 0 black, 1px 1px 0 black;;
   }
 
 .name-day-div h1, .theme-day-div h1 {
@@ -91,7 +93,7 @@ body {
 }
 
 
-.room-status-div h1 {
+.room-status-div h1{
     font-size: 32px;
     font-family: 'Handlee', cursive;
     text-shadow: -1px -1px 0 black,  1px -1px 0 black,
@@ -220,7 +222,7 @@ body {
   width: 100%;
   height: 280px;
   /*background-color: #0b6b0b;*/
-  background-image: url('images/sommarälv.jpg');
+  background-image: url('images/cloud.jpg');
   border-radius: 5px 5px 0 0
 }
 
